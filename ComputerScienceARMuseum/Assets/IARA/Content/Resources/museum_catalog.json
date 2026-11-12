@@ -1,0 +1,286 @@
+{
+    "categories":  [
+                       {
+                           "displayOrder":  1,
+                           "title":  "Criptografie si criptanaliza",
+                           "categoryId":  "cryptography"
+                       },
+                       {
+                           "displayOrder":  2,
+                           "title":  "Calculatoare timpurii",
+                           "categoryId":  "early-computing"
+                       },
+                       {
+                           "displayOrder":  3,
+                           "title":  "Nasterea computerului personal",
+                           "categoryId":  "personal-computing"
+                       }
+                   ],
+    "exhibits":  [
+                     {
+                         "orientationEuler":  [
+                                                  0,
+                                                  0,
+                                                  0
+                                              ],
+                         "hotspots":  [
+
+                                      ],
+                         "scaleMultiplier":  1,
+                         "fidelityLabel":  "reconstructie aproximativa",
+                         "impact":  "",
+                         "title":  "Enigma",
+                         "markerId":  "marker_enigma",
+                         "yearMeaning":  "",
+                         "creators":  [
+
+                                      ],
+                         "credits":  [
+
+                                     ],
+                         "categoryId":  "cryptography",
+                         "historicalContext":  "",
+                         "demoKey":  "enigma_signal_path",
+                         "summary":  "",
+                         "exhibitId":  "ENC-01",
+                         "howItWorks":  "",
+                         "modelKey":  "enigma",
+                         "yearLabel":  "",
+                         "sources":  [
+
+                                     ]
+                     },
+                     {
+                         "orientationEuler":  [
+                                                  0,
+                                                  0,
+                                                  0
+                                              ],
+                         "hotspots":  [
+
+                                      ],
+                         "scaleMultiplier":  1,
+                         "fidelityLabel":  "reconstructie aproximativa",
+                         "impact":  "",
+                         "title":  "Turing-Welchman Bombe",
+                         "markerId":  "marker_bombe",
+                         "yearMeaning":  "",
+                         "creators":  [
+
+                                      ],
+                         "credits":  [
+
+                                     ],
+                         "categoryId":  "cryptography",
+                         "historicalContext":  "",
+                         "demoKey":  "bombe_drum_cycle",
+                         "summary":  "",
+                         "exhibitId":  "ENC-02",
+                         "howItWorks":  "",
+                         "modelKey":  "bombe",
+                         "yearLabel":  "",
+                         "sources":  [
+
+                                     ]
+                     },
+                     {
+                         "orientationEuler":  [
+                                                  0,
+                                                  0,
+                                                  0
+                                              ],
+                         "hotspots":  [
+
+                                      ],
+                         "scaleMultiplier":  1,
+                         "fidelityLabel":  "reconstructie aproximativa",
+                         "impact":  "",
+                         "title":  "Colossus",
+                         "markerId":  "marker_colossus",
+                         "yearMeaning":  "",
+                         "creators":  [
+
+                                      ],
+                         "credits":  [
+
+                                     ],
+                         "categoryId":  "early-computing",
+                         "historicalContext":  "",
+                         "demoKey":  "colossus_tape_flow",
+                         "summary":  "",
+                         "exhibitId":  "EAR-01",
+                         "howItWorks":  "",
+                         "modelKey":  "colossus",
+                         "yearLabel":  "",
+                         "sources":  [
+
+                                     ]
+                     },
+                     {
+                         "orientationEuler":  [
+                                                  0,
+                                                  0,
+                                                  0
+                                              ],
+                         "hotspots":  [
+
+                                      ],
+                         "scaleMultiplier":  1,
+                         "fidelityLabel":  "reconstructie aproximativa",
+                         "impact":  "",
+                         "title":  "ENIAC",
+                         "markerId":  "marker_eniac",
+                         "yearMeaning":  "",
+                         "creators":  [
+
+                                      ],
+                         "credits":  [
+
+                                     ],
+                         "categoryId":  "early-computing",
+                         "historicalContext":  "",
+                         "demoKey":  "eniac_calculation_flow",
+                         "summary":  "",
+                         "exhibitId":  "EAR-02",
+                         "howItWorks":  "",
+                         "modelKey":  "eniac",
+                         "yearLabel":  "",
+                         "sources":  [
+
+                                     ]
+                     },
+                     {
+                         "orientationEuler":  [
+                                                  0,
+                                                  0,
+                                                  0
+                                              ],
+                         "hotspots":  [
+
+                                      ],
+                         "scaleMultiplier":  1,
+                         "fidelityLabel":  "reconstructie aproximativa",
+                         "impact":  "",
+                         "title":  "Apple I",
+                         "markerId":  "marker_apple_i",
+                         "yearMeaning":  "",
+                         "creators":  [
+
+                                      ],
+                         "credits":  [
+
+                                     ],
+                         "categoryId":  "personal-computing",
+                         "historicalContext":  "",
+                         "demoKey":  null,
+                         "summary":  "",
+                         "exhibitId":  "PC-01",
+                         "howItWorks":  "",
+                         "modelKey":  "apple_i",
+                         "yearLabel":  "",
+                         "sources":  [
+
+                                     ]
+                     },
+                     {
+                         "orientationEuler":  [
+                                                  0,
+                                                  0,
+                                                  0
+                                              ],
+                         "hotspots":  [
+
+                                      ],
+                         "scaleMultiplier":  1,
+                         "fidelityLabel":  "reconstructie aproximativa",
+                         "impact":  "",
+                         "title":  "Apple II",
+                         "markerId":  "marker_apple_ii",
+                         "yearMeaning":  "",
+                         "creators":  [
+
+                                      ],
+                         "credits":  [
+
+                                     ],
+                         "categoryId":  "personal-computing",
+                         "historicalContext":  "",
+                         "demoKey":  null,
+                         "summary":  "",
+                         "exhibitId":  "PC-02",
+                         "howItWorks":  "",
+                         "modelKey":  "apple_ii",
+                         "yearLabel":  "",
+                         "sources":  [
+
+                                     ]
+                     },
+                     {
+                         "orientationEuler":  [
+                                                  0,
+                                                  0,
+                                                  0
+                                              ],
+                         "hotspots":  [
+
+                                      ],
+                         "scaleMultiplier":  1,
+                         "fidelityLabel":  "reconstructie aproximativa",
+                         "impact":  "",
+                         "title":  "IBM PC 5150",
+                         "markerId":  "marker_ibm_5150",
+                         "yearMeaning":  "",
+                         "creators":  [
+
+                                      ],
+                         "credits":  [
+
+                                     ],
+                         "categoryId":  "personal-computing",
+                         "historicalContext":  "",
+                         "demoKey":  null,
+                         "summary":  "",
+                         "exhibitId":  "PC-03",
+                         "howItWorks":  "",
+                         "modelKey":  "ibm_5150",
+                         "yearLabel":  "",
+                         "sources":  [
+
+                                     ]
+                     },
+                     {
+                         "orientationEuler":  [
+                                                  0,
+                                                  0,
+                                                  0
+                                              ],
+                         "hotspots":  [
+
+                                      ],
+                         "scaleMultiplier":  1,
+                         "fidelityLabel":  "reconstructie aproximativa",
+                         "impact":  "",
+                         "title":  "Macintosh 128K",
+                         "markerId":  "marker_macintosh_128k",
+                         "yearMeaning":  "",
+                         "creators":  [
+
+                                      ],
+                         "credits":  [
+
+                                     ],
+                         "categoryId":  "personal-computing",
+                         "historicalContext":  "",
+                         "demoKey":  null,
+                         "summary":  "",
+                         "exhibitId":  "PC-04",
+                         "howItWorks":  "",
+                         "modelKey":  "macintosh_128k",
+                         "yearLabel":  "",
+                         "sources":  [
+
+                                     ]
+                     }
+                 ],
+    "schemaVersion":  1
+}
