@@ -13,7 +13,7 @@ This document describes the approved direction. Task I2 adds Unity scaffolding a
 
 Presentation calls Application. Application consumes Content and coordinates AR through contracts. AR may use Content asset mappings but does not control catalog navigation. Unity composition wires these boundaries; exact classes, assembly layout, and loader choices remain implementation decisions.
 
-I3 implements the first three non-AR boundaries through `Iara.Presentation`, `Iara.Application`, and `Iara.Content` assemblies. `MuseumScreen` binds serialized uGUI/TMP references, `MuseumState` owns category/expansion state without UI dependencies, and `MuseumCatalog` parses the existing TextAsset. UI prefab references are serialized on the scene component; the future exhibit model/marker ScriptableObject registry is not implemented.
+I3 implements the first three non-AR boundaries through `Iara.Presentation`, `Iara.Application`, and `Iara.Content` assemblies. `MuseumScreen` binds serialized uGUI/TMP references, `MuseumState` owns category/expansion state without UI dependencies, and `MuseumCatalog` parses the existing TextAsset. I4 extends Content validation and Presentation binding for historical sections and locally stored source titles; Application state and AR remain unchanged. UI prefab references are serialized on the scene component; the future exhibit model/marker ScriptableObject registry is not implemented.
 
 ## Planned scenes
 
@@ -27,12 +27,12 @@ Planned flow: Bootstrap → Museum → ARExperience → Museum. Selection crosse
 
 ## Content ownership
 
-- JSON owns stable `exhibitId`, `categoryId`, `markerId`, `modelKey`, optional `demoKey`, editorial text, dates and their meaning, creators, sources, credits, fidelity labels, hotspots, and initial scale/orientation metadata. The current schema is version 1.
+- JSON owns stable `exhibitId`, `categoryId`, `markerId`, `modelKey`, optional `demoKey`, editorial text, dates and their meaning, creators, sources, credits, fidelity labels, hotspots, and initial scale/orientation metadata. The current schema is [version 2](CATALOG_SCHEMA.md), with per-field source associations and explicit editorial scope notes.
 - Pavilions map to JSON categories: `cryptography`, `early-computing`, and `personal-computing`.
 - Exhibit registry ScriptableObjects will map stable keys to Unity asset references: one main prefab and one unique reference image per exhibit, plus applicable demonstration assets/components. No exhibit registry exists yet; Unity rendering/XR configuration assets serve a separate purpose.
 - JSON keys alone are not Unity asset references. All eight entries must resolve locally; unknown or missing mappings must produce a controlled error rather than display the wrong model.
 - Initial metadata scale/orientation establishes a model baseline. User zoom/rotation is separate session state; resetting restores that baseline.
-- Packaging must include JSON, models, images, educational resources, and attribution. Task I2 places a byte-identical JSON TextAsset copy under `Assets/IARA/Content/Resources/`; I3 reads this asset through a serialized scene reference. Synchronization with the repository source is still manual. Packaging of other exhibit assets remains to be designed and must work on Android without network access.
+- Packaging must include JSON, models, images, educational resources, and attribution. Task I2 places a byte-identical JSON TextAsset copy under `Assets/IARA/Content/Resources/`; I3 reads this asset through a serialized scene reference. Synchronization with the repository source is manual, with I4 hash validation and a Unity GUID/byte regression test. I4 bundles citation metadata without fetching URLs. Packaging of other exhibit assets remains to be designed and must work on Android without network access.
 
 ## Tracking and interaction
 

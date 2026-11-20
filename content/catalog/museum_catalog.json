@@ -28,26 +28,69 @@
                                       ],
                          "scaleMultiplier":  1,
                          "fidelityLabel":  "reconstructie aproximativa",
-                         "impact":  "",
                          "title":  "Enigma",
                          "markerId":  "marker_enigma",
-                         "yearMeaning":  "",
-                         "creators":  [
-
-                                      ],
                          "credits":  [
 
                                      ],
                          "categoryId":  "cryptography",
-                         "historicalContext":  "",
                          "demoKey":  "enigma_signal_path",
-                         "summary":  "",
                          "exhibitId":  "ENC-01",
-                         "howItWorks":  "",
                          "modelKey":  "enigma",
-                         "yearLabel":  "",
+                         "yearLabel":  "1918",
+                         "yearMeaning":  "Early Enigma development associated with Arthur Scherbius, not a wartime model\u0027s manufacturing date.",
+                         "creators":  [
+                                          "Arthur Scherbius — early Enigma developer"
+                                      ],
+                         "summary":  "An electromechanical rotor cipher machine, developed commercially before its military use.",
+                         "historicalContext":  "German forces used adapted Enigma machines during the Second World War. Allied attacks built on earlier Polish cryptanalysis.",
+                         "howItWorks":  "In a typical military configuration, a keyboard, plugboard and changing rotor settings transform letters; a lamp indicates the result.",
+                         "impact":  "Enigma traffic became a major target of Allied codebreaking, combining mathematical methods and machine-assisted searches.",
+                         "editorialNotes":  [
+                                                {
+                                                    "kind":  "simplification",
+                                                    "text":  "The mechanism is an educational outline of military Enigma. Rotor arrangements varied; no single variant or future 3D reconstruction is specified.",
+                                                    "sourceIds":  [
+                                                                      "ENC-01-S1",
+                                                                      "ENC-01-S2"
+                                                                  ]
+                                                }
+                                            ],
                          "sources":  [
-
+                                         {
+                                             "sourceId":  "ENC-01-S1",
+                                             "title":  "The role of the Enigma encoding machine in World War 2",
+                                             "publisher":  "National Museums Scotland",
+                                             "url":  "https://www.nms.ac.uk/discover-catalogue/the-role-of-the-enigma-encoding-machine-in-world-war-2",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearLabel",
+                                                              "yearMeaning",
+                                                              "creators",
+                                                              "summary",
+                                                              "historicalContext",
+                                                              "howItWorks",
+                                                              "impact"
+                                                          ],
+                                             "locator":  "Early development paragraph; How Enigma machines worked",
+                                             "attribution":  "Dr Tacye Phillipson, National Museums Scotland."
+                                         },
+                                         {
+                                             "sourceId":  "ENC-01-S2",
+                                             "title":  "The Turing-Welchman Bombe — Enigma section",
+                                             "publisher":  "The National Museum of Computing",
+                                             "url":  "https://www.tnmoc.org/bombe",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "historicalContext",
+                                                              "howItWorks",
+                                                              "impact"
+                                                          ],
+                                             "locator":  "Enigma section and description of Allied key recovery",
+                                             "attribution":  "The National Museum of Computing."
+                                         }
                                      ]
                      },
                      {
@@ -61,26 +104,71 @@
                                       ],
                          "scaleMultiplier":  1,
                          "fidelityLabel":  "reconstructie aproximativa",
-                         "impact":  "",
                          "title":  "Turing-Welchman Bombe",
                          "markerId":  "marker_bombe",
-                         "yearMeaning":  "",
-                         "creators":  [
-
-                                      ],
                          "credits":  [
 
                                      ],
                          "categoryId":  "cryptography",
-                         "historicalContext":  "",
                          "demoKey":  "bombe_drum_cycle",
-                         "summary":  "",
                          "exhibitId":  "ENC-02",
-                         "howItWorks":  "",
                          "modelKey":  "bombe",
-                         "yearLabel":  "",
+                         "yearLabel":  "1940",
+                         "yearMeaning":  "First British Bombe operation; the diagonal-board Turing-Welchman version followed within the same year.",
+                         "creators":  [
+                                          "Alan Turing — cryptanalytic design",
+                                          "Gordon Welchman — diagonal board",
+                                          "British Tabulating Machine Company — engineering and construction"
+                                      ],
+                         "summary":  "An electromechanical machine that helped search for Enigma keys during the Second World War.",
+                         "historicalContext":  "British work built on pre-war Polish cryptanalysis. Turing\u0027s approach used guessed plaintext fragments, called cribs, rather than relying on the earlier indicator method.",
+                         "howItWorks":  "Operators wired a crib-derived menu. Rotating drums tested candidate settings; possible stops needed checking. Welchman\u0027s diagonal board reduced false candidates.",
+                         "impact":  "Bombes accelerated recovery of Enigma keys and helped codebreakers read intercepted military traffic.",
+                         "editorialNotes":  [
+                                                {
+                                                    "kind":  "scope",
+                                                    "text":  "A Bombe searched for candidate keys; it was not a general-purpose computer or a machine that simply printed every intercepted message in plaintext.",
+                                                    "sourceIds":  [
+                                                                      "ENC-02-S1",
+                                                                      "ENC-02-S2"
+                                                                  ]
+                                                }
+                                            ],
                          "sources":  [
-
+                                         {
+                                             "sourceId":  "ENC-02-S1",
+                                             "title":  "The Turing-Welchman Bombe",
+                                             "publisher":  "The National Museum of Computing",
+                                             "url":  "https://www.tnmoc.org/bombe",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearLabel",
+                                                              "yearMeaning",
+                                                              "creators",
+                                                              "summary",
+                                                              "historicalContext",
+                                                              "howItWorks",
+                                                              "impact"
+                                                          ],
+                                             "locator":  "First Bombe in March 1940; Agnes in August 1940; The Bombe",
+                                             "attribution":  "The National Museum of Computing."
+                                         },
+                                         {
+                                             "sourceId":  "ENC-02-S2",
+                                             "title":  "6 — Enter Turing and Welchman",
+                                             "publisher":  "The National Museum of Computing",
+                                             "url":  "https://www.tnmoc.org/bh-6-enter-turing-and-welchman",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "creators",
+                                                              "historicalContext",
+                                                              "howItWorks"
+                                                          ],
+                                             "locator":  "Victory, cribs, menus and Welchman\u0027s diagonal board",
+                                             "attribution":  "The National Museum of Computing."
+                                         }
                                      ]
                      },
                      {
@@ -94,26 +182,53 @@
                                       ],
                          "scaleMultiplier":  1,
                          "fidelityLabel":  "reconstructie aproximativa",
-                         "impact":  "",
                          "title":  "Colossus",
                          "markerId":  "marker_colossus",
-                         "yearMeaning":  "",
-                         "creators":  [
-
-                                      ],
                          "credits":  [
 
                                      ],
                          "categoryId":  "early-computing",
-                         "historicalContext":  "",
                          "demoKey":  "colossus_tape_flow",
-                         "summary":  "",
                          "exhibitId":  "EAR-01",
-                         "howItWorks":  "",
                          "modelKey":  "colossus",
-                         "yearLabel":  "",
+                         "yearLabel":  "1944",
+                         "yearMeaning":  "Colossus Mk I was working at Bletchley Park by early February 1944.",
+                         "creators":  [
+                                          "Tommy Flowers and the Post Office Research Station team, Dollis Hill"
+                                      ],
+                         "summary":  "An early programmable electronic digital machine built for attacks on the Lorenz cipher.",
+                         "historicalContext":  "Colossus supported Bletchley Park\u0027s work on high-level German communications encrypted with Lorenz, not Enigma.",
+                         "howItWorks":  "Paper tape fed ciphertext into valve-based electronic circuits configured to help identify Lorenz wheel settings.",
+                         "impact":  "It sped up Lorenz cryptanalysis. Wartime secrecy delayed public recognition of the machine and its engineers.",
+                         "editorialNotes":  [
+                                                {
+                                                    "kind":  "scope",
+                                                    "text":  "Programmability was limited to its cryptanalytic task. Colossus was neither a modern general-purpose computer nor a stored-program machine.",
+                                                    "sourceIds":  [
+                                                                      "EAR-01-S1"
+                                                                  ]
+                                                }
+                                            ],
                          "sources":  [
-
+                                         {
+                                             "sourceId":  "EAR-01-S1",
+                                             "title":  "Colossus",
+                                             "publisher":  "The National Museum of Computing",
+                                             "url":  "https://www.tnmoc.org/colossus",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearLabel",
+                                                              "yearMeaning",
+                                                              "creators",
+                                                              "summary",
+                                                              "historicalContext",
+                                                              "howItWorks",
+                                                              "impact"
+                                                          ],
+                                             "locator":  "Colossus gallery introduction; The Colossus Computer",
+                                             "attribution":  "The National Museum of Computing."
+                                         }
                                      ]
                      },
                      {
@@ -127,26 +242,85 @@
                                       ],
                          "scaleMultiplier":  1,
                          "fidelityLabel":  "reconstructie aproximativa",
-                         "impact":  "",
                          "title":  "ENIAC",
                          "markerId":  "marker_eniac",
-                         "yearMeaning":  "",
-                         "creators":  [
-
-                                      ],
                          "credits":  [
 
                                      ],
                          "categoryId":  "early-computing",
-                         "historicalContext":  "",
                          "demoKey":  "eniac_calculation_flow",
-                         "summary":  "",
                          "exhibitId":  "EAR-02",
-                         "howItWorks":  "",
                          "modelKey":  "eniac",
-                         "yearLabel":  "",
+                         "yearLabel":  "1946",
+                         "yearMeaning":  "Public unveiling year; operational work had already begun before the public announcement.",
+                         "creators":  [
+                                          "J. Presper Eckert — chief engineer",
+                                          "John Mauchly — co-designer",
+                                          "Moore School engineering team and six original women programmers"
+                                      ],
+                         "summary":  "An early general-purpose electronic digital computer, publicly unveiled in 1946.",
+                         "historicalContext":  "Built at the University of Pennsylvania for U.S. Army ballistics work. Its programmers translated numerical problems into sequences of machine operations.",
+                         "howItWorks":  "Vacuum-tube circuits performed arithmetic. Initially, cables and switches configured calculations rather than programs being loaded into memory in the modern stored-program manner.",
+                         "impact":  "ENIAC demonstrated electronic calculation at large scale and helped encourage later electronic computing projects.",
+                         "editorialNotes":  [
+                                                {
+                                                    "kind":  "scope",
+                                                    "text":  "This describes the initial programming arrangement, not later modifications. \u0027First computer\u0027 is avoided because priority depends on which capabilities are compared.",
+                                                    "sourceIds":  [
+                                                                      "EAR-02-S1",
+                                                                      "EAR-02-S3"
+                                                                  ]
+                                                }
+                                            ],
                          "sources":  [
-
+                                         {
+                                             "sourceId":  "EAR-02-S1",
+                                             "title":  "1946 — Public unveiling of ENIAC",
+                                             "publisher":  "Computer History Museum",
+                                             "url":  "https://www.computerhistory.org/timeline/1946/",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearLabel",
+                                                              "yearMeaning",
+                                                              "creators",
+                                                              "summary",
+                                                              "howItWorks",
+                                                              "impact"
+                                                          ],
+                                             "locator":  "Public unveiling of ENIAC; Project Whirlwind begins",
+                                             "attribution":  "Computer History Museum, Timeline of Computer History."
+                                         },
+                                         {
+                                             "sourceId":  "EAR-02-S2",
+                                             "title":  "The Minds Behind ENIAC",
+                                             "publisher":  "Computer History Museum",
+                                             "url":  "https://www.computerhistory.org/revolution/birth-of-the-computer/4/80",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "creators",
+                                                              "historicalContext"
+                                                          ],
+                                             "locator":  "The Minds Behind ENIAC; Military Demands, Engineering Solutions",
+                                             "attribution":  "Computer History Museum, Revolution exhibition."
+                                         },
+                                         {
+                                             "sourceId":  "EAR-02-S3",
+                                             "title":  "Programming the ENIAC",
+                                             "publisher":  "Columbia University Computing History",
+                                             "url":  "https://www.columbia.edu/cu/computinghistory/eniac.html",
+                                             "sourceType":  "academic-archive",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearMeaning",
+                                                              "creators",
+                                                              "historicalContext",
+                                                              "howItWorks"
+                                                          ],
+                                             "locator":  "Opening description; quotation about the original six programmers",
+                                             "attribution":  "Frank da Cruz; Columbia University Computing History."
+                                         }
                                      ]
                      },
                      {
@@ -160,26 +334,85 @@
                                       ],
                          "scaleMultiplier":  1,
                          "fidelityLabel":  "reconstructie aproximativa",
-                         "impact":  "",
                          "title":  "Apple I",
                          "markerId":  "marker_apple_i",
-                         "yearMeaning":  "",
-                         "creators":  [
-
-                                      ],
                          "credits":  [
 
                                      ],
                          "categoryId":  "personal-computing",
-                         "historicalContext":  "",
                          "demoKey":  null,
-                         "summary":  "",
                          "exhibitId":  "PC-01",
-                         "howItWorks":  "",
                          "modelKey":  "apple_i",
-                         "yearLabel":  "",
+                         "yearLabel":  "1976",
+                         "yearMeaning":  "Year of the commercial Apple I boards; earlier design work is a separate milestone.",
+                         "creators":  [
+                                          "Steve Wozniak — computer designer",
+                                          "Apple Computer Company — commercial product; Steve Jobs — business development"
+                                      ],
+                         "summary":  "Apple\u0027s early personal computer sold as an assembled circuit board, not a complete desktop system.",
+                         "historicalContext":  "Wozniak\u0027s design attracted interest among computer hobbyists. Buyers supplied external equipment to turn the board into a usable system.",
+                         "howItWorks":  "A MOS Technology 6502, RAM, monitor software and video circuitry let users enter, inspect and run programs with an external keyboard and display.",
+                         "impact":  "A tested, assembled board reduced the hardware assembly required of buyers and formed part of Apple\u0027s move toward consumer computers.",
+                         "editorialNotes":  [
+                                                {
+                                                    "kind":  "scope",
+                                                    "text":  "The displayed year is not a claim that personal computing began in 1976. Cases and peripherals seen with surviving Apple I boards need not be original standard equipment.",
+                                                    "sourceIds":  [
+                                                                      "PC-01-S1",
+                                                                      "PC-01-S2"
+                                                                  ]
+                                                }
+                                            ],
                          "sources":  [
-
+                                         {
+                                             "sourceId":  "PC-01-S1",
+                                             "title":  "Apple I Microcomputer",
+                                             "publisher":  "Smithsonian National Museum of American History",
+                                             "url":  "https://www.si.edu/object/apple-i-microcomputer:nmah_1692121",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearLabel",
+                                                              "yearMeaning",
+                                                              "creators",
+                                                              "summary",
+                                                              "historicalContext",
+                                                              "howItWorks",
+                                                              "impact"
+                                                          ],
+                                             "locator":  "Object Details; Description; date made 1976",
+                                             "attribution":  "Smithsonian National Museum of American History, object nmah_1692121."
+                                         },
+                                         {
+                                             "sourceId":  "PC-01-S2",
+                                             "title":  "Apple-1 Operation Manual (1976)",
+                                             "publisher":  "Apple Computer Company",
+                                             "url":  "https://archive.computerhistory.org/resources/text/Apple/Apple.AppleI.1976.102646518.pdf",
+                                             "sourceType":  "primary",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "summary",
+                                                              "howItWorks"
+                                                          ],
+                                             "locator":  "PDF pp. 2–3: system description and Getting the system running",
+                                             "attribution":  "Apple Computer Company; preserved by Computer History Museum, catalog 102646518."
+                                         },
+                                         {
+                                             "sourceId":  "PC-01-S3",
+                                             "title":  "Apple Computer, Inc.",
+                                             "publisher":  "Computer History Museum",
+                                             "url":  "https://www.computerhistory.org/brochures/a-c/",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearLabel",
+                                                              "yearMeaning",
+                                                              "creators",
+                                                              "historicalContext"
+                                                          ],
+                                             "locator":  "Company overview: Wozniak\u0027s engineering and Jobs\u0027s marketing",
+                                             "attribution":  "Computer History Museum, Selling the Computer Revolution."
+                                         }
                                      ]
                      },
                      {
@@ -193,26 +426,69 @@
                                       ],
                          "scaleMultiplier":  1,
                          "fidelityLabel":  "reconstructie aproximativa",
-                         "impact":  "",
                          "title":  "Apple II",
                          "markerId":  "marker_apple_ii",
-                         "yearMeaning":  "",
-                         "creators":  [
-
-                                      ],
                          "credits":  [
 
                                      ],
                          "categoryId":  "personal-computing",
-                         "historicalContext":  "",
                          "demoKey":  null,
-                         "summary":  "",
                          "exhibitId":  "PC-02",
-                         "howItWorks":  "",
                          "modelKey":  "apple_ii",
-                         "yearLabel":  "",
+                         "yearLabel":  "1977",
+                         "yearMeaning":  "Introduction year of the original Apple II, not later Apple II family models.",
+                         "creators":  [
+                                          "Steve Wozniak — computer designer",
+                                          "Apple Computer — product team; Steve Jobs — promotion"
+                                      ],
+                         "summary":  "A more complete consumer computer with an integrated keyboard, BASIC and color graphics.",
+                         "historicalContext":  "Unlike the Apple I board, the Apple II included a case and power supply. A television or monitor provided its display.",
+                         "howItWorks":  "A 6502 processor ran programs using RAM and BASIC in ROM. Built-in video circuitry supported text and graphics; connectors allowed expansion.",
+                         "impact":  "The later disk drive and VisiCalc spreadsheet helped broaden its use beyond hobby computing.",
+                         "editorialNotes":  [
+                                                {
+                                                    "kind":  "scope",
+                                                    "text":  "The disk drive arrived in 1978 and VisiCalc in 1979; neither should be presented as part of the original 1977 launch configuration.",
+                                                    "sourceIds":  [
+                                                                      "PC-02-S1"
+                                                                  ]
+                                                }
+                                            ],
                          "sources":  [
-
+                                         {
+                                             "sourceId":  "PC-02-S1",
+                                             "title":  "The Apple II",
+                                             "publisher":  "Computer History Museum",
+                                             "url":  "https://www.computerhistory.org/revolution/personal-computers/17/300",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearLabel",
+                                                              "yearMeaning",
+                                                              "creators",
+                                                              "summary",
+                                                              "historicalContext",
+                                                              "howItWorks",
+                                                              "impact"
+                                                          ],
+                                             "locator":  "The Apple II; A Tale of Two Steves; disk drive and VisiCalc dates",
+                                             "attribution":  "Computer History Museum, Revolution exhibition."
+                                         },
+                                         {
+                                             "sourceId":  "PC-02-S2",
+                                             "title":  "Introducing Apple II, the personal computer (1977)",
+                                             "publisher":  "Apple Computer, Inc.",
+                                             "url":  "https://s3data.computerhistory.org/brochures/apple.ii.1977.102637933.pdf",
+                                             "sourceType":  "primary",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "summary",
+                                                              "historicalContext",
+                                                              "howItWorks"
+                                                          ],
+                                             "locator":  "PDF p. 4: standard features, microprocessor, memory and video",
+                                             "attribution":  "Apple Computer, Inc.; preserved by Computer History Museum, catalog 102637933."
+                                         }
                                      ]
                      },
                      {
@@ -226,26 +502,69 @@
                                       ],
                          "scaleMultiplier":  1,
                          "fidelityLabel":  "reconstructie aproximativa",
-                         "impact":  "",
                          "title":  "IBM PC 5150",
                          "markerId":  "marker_ibm_5150",
-                         "yearMeaning":  "",
-                         "creators":  [
-
-                                      ],
                          "credits":  [
 
                                      ],
                          "categoryId":  "personal-computing",
-                         "historicalContext":  "",
                          "demoKey":  null,
-                         "summary":  "",
                          "exhibitId":  "PC-03",
-                         "howItWorks":  "",
                          "modelKey":  "ibm_5150",
-                         "yearLabel":  "",
+                         "yearLabel":  "1981",
+                         "yearMeaning":  "IBM announced the model 5150 Personal Computer on 12 August 1981.",
+                         "creators":  [
+                                          "IBM Boca Raton development team, led by Don Estridge"
+                                      ],
+                         "summary":  "IBM\u0027s model 5150 helped establish a widely copied personal-computer platform.",
+                         "historicalContext":  "The development team used outside suppliers and published technical information to support software and peripherals.",
+                         "howItWorks":  "An Intel 8088-based system ran software with expandable hardware. Microsoft supplied the disk operating software associated with the PC platform.",
+                         "impact":  "Business adoption and compatible machines supported a large market for PC software and peripheral devices.",
+                         "editorialNotes":  [
+                                                {
+                                                    "kind":  "scope",
+                                                    "text":  "The 5150 was not the first personal computer. Later XT and AT models and modern PCs should not be treated as identical to the original system.",
+                                                    "sourceIds":  [
+                                                                      "PC-03-S1",
+                                                                      "PC-03-S2"
+                                                                  ]
+                                                }
+                                            ],
                          "sources":  [
-
+                                         {
+                                             "sourceId":  "PC-03-S1",
+                                             "title":  "The IBM PC",
+                                             "publisher":  "IBM",
+                                             "url":  "https://www.ibm.com/history/personal-computer",
+                                             "sourceType":  "manufacturer",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearLabel",
+                                                              "yearMeaning",
+                                                              "creators",
+                                                              "summary",
+                                                              "historicalContext",
+                                                              "howItWorks",
+                                                              "impact"
+                                                          ],
+                                             "locator":  "Development team; Design \u0026 sales; August 12, 1981 unveiling",
+                                             "attribution":  "IBM corporate history."
+                                         },
+                                         {
+                                             "sourceId":  "PC-03-S2",
+                                             "title":  "1981 — IBM introduces its Personal Computer",
+                                             "publisher":  "Computer History Museum",
+                                             "url":  "https://www.computerhistory.org/timeline/1981/",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "summary",
+                                                              "howItWorks",
+                                                              "impact"
+                                                          ],
+                                             "locator":  "IBM introduces its Personal Computer; MS-DOS released with the IBM PC",
+                                             "attribution":  "Computer History Museum, Timeline of Computer History."
+                                         }
                                      ]
                      },
                      {
@@ -259,28 +578,72 @@
                                       ],
                          "scaleMultiplier":  1,
                          "fidelityLabel":  "reconstructie aproximativa",
-                         "impact":  "",
                          "title":  "Macintosh 128K",
                          "markerId":  "marker_macintosh_128k",
-                         "yearMeaning":  "",
-                         "creators":  [
-
-                                      ],
                          "credits":  [
 
                                      ],
                          "categoryId":  "personal-computing",
-                         "historicalContext":  "",
                          "demoKey":  null,
-                         "summary":  "",
                          "exhibitId":  "PC-04",
-                         "howItWorks":  "",
                          "modelKey":  "macintosh_128k",
-                         "yearLabel":  "",
+                         "yearLabel":  "1984",
+                         "yearMeaning":  "Public introduction on 24 January 1984; 128K identifies the original memory configuration.",
+                         "creators":  [
+                                          "Apple Computer — Macintosh development team"
+                                      ],
+                         "summary":  "A compact personal computer with a mouse-driven graphical desktop and 128 KB of RAM.",
+                         "historicalContext":  "Apple brought Lisa-related interface ideas into a smaller, self-contained Macintosh, offered with word-processing and graphics applications.",
+                         "howItWorks":  "Users selected icons and menus with a mouse. Built-in interface software and RAM supported graphical applications instead of requiring only typed commands.",
+                         "impact":  "The Macintosh helped bring graphical desktop computing to audiences including designers, artists and educators.",
+                         "editorialNotes":  [
+                                                {
+                                                    "kind":  "scope",
+                                                    "text":  "Macintosh did not invent the graphical user interface. Team attribution here is institutional and is not an exhaustive list of individual contributors.",
+                                                    "sourceIds":  [
+                                                                      "PC-04-S1",
+                                                                      "PC-04-S2"
+                                                                  ]
+                                                }
+                                            ],
                          "sources":  [
-
+                                         {
+                                             "sourceId":  "PC-04-S1",
+                                             "title":  "First Macintosh Press Release — 24 January 1984",
+                                             "publisher":  "Apple Computer / Regis McKenna Public Relations",
+                                             "url":  "https://web.stanford.edu/dept/SUL/sites/mac/primary/docs/pr1.html",
+                                             "sourceType":  "primary",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearLabel",
+                                                              "yearMeaning",
+                                                              "creators",
+                                                              "summary",
+                                                              "historicalContext",
+                                                              "howItWorks"
+                                                          ],
+                                             "locator":  "Apple Computer Inc. Papers, M1007, Series 9, Box 1, Folder 11; opening paragraphs",
+                                             "attribution":  "Original Apple announcement, preserved by Stanford University Libraries."
+                                         },
+                                         {
+                                             "sourceId":  "PC-04-S2",
+                                             "title":  "Apple Macintosh",
+                                             "publisher":  "Computer History Museum",
+                                             "url":  "https://www.computerhistory.org/revolution/personal-computers/17/303/1203",
+                                             "sourceType":  "museum",
+                                             "accessedOn":  "2026-11-20",
+                                             "supports":  [
+                                                              "yearLabel",
+                                                              "creators",
+                                                              "summary",
+                                                              "historicalContext",
+                                                              "impact"
+                                                          ],
+                                             "locator":  "Date introduced, manufacturer, memory, and description",
+                                             "attribution":  "Computer History Museum, objects 102756924, 102756926 and 102756927."
+                                         }
                                      ]
                      }
                  ],
-    "schemaVersion":  1
+    "schemaVersion":  2
 }

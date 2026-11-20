@@ -44,7 +44,7 @@ namespace Iara.Tests
         {
             Assert.Throws<FormatException>(() => MuseumCatalog.Parse("{}"));
             Assert.Throws<FormatException>(() => MuseumCatalog.Parse(
-                "{\"schemaVersion\":1,\"categories\":[{\"categoryId\":\"x\"}],\"exhibits\":[{\"exhibitId\":\"a\",\"title\":\"Title\",\"categoryId\":\"missing\"}]}"));
+                "{\"schemaVersion\":2,\"categories\":[{\"categoryId\":\"x\"}],\"exhibits\":[{\"exhibitId\":\"a\",\"title\":\"Title\",\"categoryId\":\"missing\"}]}"));
         }
 
         [UnityTest]

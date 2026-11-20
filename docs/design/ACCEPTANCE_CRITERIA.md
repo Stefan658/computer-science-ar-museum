@@ -1,6 +1,6 @@
 # Planned acceptance criteria
 
-These define final acceptance requirements. [I3 verification](../testing/I3_MUSEUM_UI.md) records automated Museum UI checks, including a test that enters Play Mode. Complete acceptance still requires the listed manual/device checks, verified historical content, and unimplemented scene flow/AR features. See [architecture](../architecture/ARCHITECTURE.md) and the [catalog](../../content/catalog/museum_catalog.json).
+These define final acceptance requirements. [I3 verification](../testing/I3_MUSEUM_UI.md) records the original Museum UI checks; [I4 verification](../testing/I4_CONTENT.md) records subsequent content integration checks. [Historical research](../../content/sources/HISTORICAL_SOURCES.md) supplies text provenance, not asset clearance. Complete acceptance still requires the listed manual/device checks, asset verification, and unimplemented scene flow/AR features. See [architecture](../architecture/ARCHITECTURE.md) and the [catalog](../../content/catalog/museum_catalog.json).
 
 For each executed criterion, record build identifier, Unity/package versions, device and Android version, prerequisites, steps, expected/observed results, and evidence in `docs/testing/`. Mark each result Pass, Fail, or Blocked; do not infer runtime success from catalog validation.
 

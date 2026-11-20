@@ -6,7 +6,7 @@ IARA is a university master's project for an educational, offline-first Android 
 
 The developer reports design phases P1–P7 as completed and approved, and repository audit #001 as approved. Task I2 initialized the Unity project in `ComputerScienceARMuseum/`; see the [setup record](docs/testing/I2_SETUP.md). Unity Editor `6000.3.27f1` and Android tooling are installed. Task I3 adds a Museum UI foundation with local catalog loading, pavilion filtering, expandable cards, scrolling, and an About view; see [I3 verification and GUI checks](docs/testing/I3_MUSEUM_UI.md). Open the Museum scene directly to use it. Bootstrap scene flow, AR behavior, models, markers, hotspots, and demonstrations remain unimplemented.
 
-The catalog contains 3 pavilions, 8 exhibits, and 4 demonstration identifiers. Historical text, dates, creators, sources, credits, and hotspots remain incomplete. Model and marker keys do not establish that assets exist. Historical claims, model fidelity, media licenses, and sources require verification before release.
+The catalog contains 3 pavilions, 8 exhibits, and 4 demonstration identifiers. Task I4 populates historical fields, dates with their meaning, contributors, source associations and editorial scope notes. Museum cards display these sections and source titles offline. See the [research ledger](content/sources/HISTORICAL_SOURCES.md), [schema contract](docs/architecture/CATALOG_SCHEMA.md), and [I4 verification](docs/testing/I4_CONTENT.md). Credits, hotspots, models, markers and demonstrations remain unfinished. Keys do not establish that assets exist; model fidelity and media rights still require verification before release.
 
 ## Planned exhibits
 
@@ -43,10 +43,11 @@ Four planned layers separate Presentation, Application, AR, and Content responsi
 | --- | --- |
 | [AGENTS.md](AGENTS.md) | Persistent engineering-agent conventions |
 | [.gitignore](.gitignore) | Generated artifacts and local environment exclusions |
-| [content/catalog/museum_catalog.json](content/catalog/museum_catalog.json) | Existing draft metadata, schema version 1 |
-| `content/sources/` | Reserved for source records; currently empty |
+| [content/catalog/museum_catalog.json](content/catalog/museum_catalog.json) | Historical metadata and local provenance, schema version 2 |
+| [content/sources/HISTORICAL_SOURCES.md](content/sources/HISTORICAL_SOURCES.md) | Research ledger, editorial decisions and remaining limits |
 | `assets-source/{markers,models,references}/` | Reserved source asset directories; currently empty |
-| [scripts/Validate-Catalog.ps1](scripts/Validate-Catalog.ps1) | Existing Draft/Release catalog validator |
+| [scripts/Validate-Catalog.ps1](scripts/Validate-Catalog.ps1) | Draft/Content/Release validator, including bundled-byte checks |
+| [scripts/Test-CatalogValidation.ps1](scripts/Test-CatalogValidation.ps1) | Valid-content and invalid-fixture checks |
 | `ComputerScienceARMuseum/` | Unity project with Museum UI foundation; Bootstrap and ARExperience remain scaffolding |
 | `docs/architecture/` | Architecture documentation |
 | `docs/design/` | Design and acceptance documentation |
@@ -63,9 +64,11 @@ Empty directories are local scaffolding and are not retained by Git unless Unity
 
    ```powershell
    powershell -NoProfile -File scripts/Validate-Catalog.ps1 -Mode Draft
+   powershell -NoProfile -File scripts/Validate-Catalog.ps1 -Mode Content
+   powershell -NoProfile -File scripts/Test-CatalogValidation.ps1
    ```
 
-   Draft currently permits missing editorial fields as warnings. Release mode treats those omissions, missing sources, and missing credits as errors. Neither mode proves asset availability, historical accuracy, or runtime behavior.
+   Draft permits missing editorial fields as warnings; Content requires complete historical metadata and source associations. Release additionally requires asset credits, which are not yet populated. These checks do not prove asset availability, historical accuracy, media rights or runtime behavior. Follow the [schema workflow](docs/architecture/CATALOG_SCHEMA.md) when synchronizing the source and bundled JSON; preserve its existing `.meta` file.
 
 5. Review changes using read-only Git inspection. Codex reports every created, modified, and deleted file, verification, outstanding issues, and exact paths recommended for staging. The human developer exclusively stages, commits, and pushes; Codex must never execute state-changing Git commands.
 

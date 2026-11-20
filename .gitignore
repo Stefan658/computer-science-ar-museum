@@ -62,3 +62,4 @@ __pycache__/
 # Local Unity initialization and verification logs
 /unity-i2-*.log
 /unity-i3-*.log
+/unity-i4-*.log
