@@ -1,7 +1,7 @@
 {
   "name": "Iara.Museum.Tests",
   "rootNamespace": "Iara.Tests",
-  "references": ["Iara.Application", "Iara.Content", "Iara.Presentation", "UnityEngine.UI", "Unity.TextMeshPro"],
+  "references": ["Iara.Application", "Iara.Content", "Iara.Presentation", "Iara.AR", "Unity.XR.ARFoundation", "Unity.XR.ARSubsystems", "Unity.XR.CoreUtils", "Unity.InputSystem", "UnityEngine.UI", "Unity.TextMeshPro"],
   "includePlatforms": ["Editor"],
   "optionalUnityReferences": ["TestAssemblies"],
   "autoReferenced": false

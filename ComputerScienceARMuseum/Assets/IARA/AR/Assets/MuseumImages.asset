@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: MuseumImages
+  m_EditorClassIdentifier: Unity.XR.ARSubsystems::UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
+  m_GuidLow: 5035510903114628513
+  m_GuidHigh: 7236868223252798105
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4671124436916555325
+      m_GuidHigh: 3403113222091431587
+    m_SerializedTextureGuid:
+      m_GuidLow: 15336140916264450247
+      m_GuidHigh: 4015864747517213162
+    m_Size: {x: 0.15, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: marker_enigma
+    m_Texture: {fileID: 2800000, guid: b346b8c7eae8d4d4eaf9c6fdb537bb37, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5612114361163003793
+      m_GuidHigh: 8821725999299554228
+    m_SerializedTextureGuid:
+      m_GuidLow: 14534387963407374895
+      m_GuidHigh: 1441843990734369528
+    m_Size: {x: 0.15, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: marker_bombe
+    m_Texture: {fileID: 2800000, guid: a29c1a2f84d8c9b4f8f2406978750214, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4915108970085281636
+      m_GuidHigh: 9371701274418828728
+    m_SerializedTextureGuid:
+      m_GuidLow: 1766656751824694503
+      m_GuidHigh: 9452412490232689499
+    m_Size: {x: 0.15, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: marker_colossus
+    m_Texture: {fileID: 2800000, guid: a48e6ce76cf418845bf3c82e14b72d83, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5674014305365909569
+      m_GuidHigh: 8125366549549264299
+    m_SerializedTextureGuid:
+      m_GuidLow: 6702711834215884881
+      m_GuidHigh: 11674315134870968137
+    m_Size: {x: 0.15, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: marker_eniac
+    m_Texture: {fileID: 2800000, guid: 963ea851d0e65d044957f311c37f03a2, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5689303877735169757
+      m_GuidHigh: 5812493519410459782
+    m_SerializedTextureGuid:
+      m_GuidLow: 10863894499190611973
+      m_GuidHigh: 18395621831349923579
+    m_Size: {x: 0.15, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: marker_apple_i
+    m_Texture: {fileID: 2800000, guid: d593a0054e7c96c4fb6e086897604aff, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5281803438692156298
+      m_GuidHigh: 11669475127787036351
+    m_SerializedTextureGuid:
+      m_GuidLow: 11008046668562874629
+      m_GuidHigh: 17624724826597116329
+    m_Size: {x: 0.15, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: marker_apple_ii
+    m_Texture: {fileID: 2800000, guid: 369cc105701f98c4a9495499d99997f4, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4736806599427378484
+      m_GuidHigh: 16001351500186839468
+    m_SerializedTextureGuid:
+      m_GuidLow: 11224116487222595783
+      m_GuidHigh: 8736662401856750424
+    m_Size: {x: 0.15, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: marker_ibm_5150
+    m_Texture: {fileID: 2800000, guid: 2a8210c7127a9bc458c32e692adc3e79, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4890546054310150537
+      m_GuidHigh: 3757166081006238115
+    m_SerializedTextureGuid:
+      m_GuidLow: 7571929071089502179
+      m_GuidHigh: 11457205778193854681
+    m_Size: {x: 0.15, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: marker_macintosh_128k
+    m_Texture: {fileID: 2800000, guid: 52be47e3e55f6914d930cccff32b009f, type: 3}

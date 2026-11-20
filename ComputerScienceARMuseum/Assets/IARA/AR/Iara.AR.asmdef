@@ -1,0 +1,5 @@
+{
+  "name": "Iara.AR",
+  "rootNamespace": "Iara.AR",
+  "references": ["Iara.Application", "Iara.Content", "Unity.XR.ARFoundation", "Unity.XR.ARSubsystems", "Unity.XR.Management", "Unity.XR.CoreUtils"]
+}

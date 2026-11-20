@@ -16,6 +16,8 @@ For each executed criterion, record build identifier, Unity/package versions, de
 
 ## Image tracking
 
+[I5](../testing/I5_AR_FOUNDATION.md) supplies simulated selection/tracking/debounce tests and prototype image assets. These are partial engineering evidence for AR-01 through AR-05, not physical-device acceptance. Final approved markers/models and the device conditions below are still required.
+
 Prerequisites: all eight approved marker images, their recorded physical sizes, mapped prefabs, camera permission, and provisioned AR support. Record marker print size, distance, lighting, and timing method.
 
 | ID | Test and expected result |

@@ -1,6 +1,6 @@
 # Planned architecture
 
-This document describes the approved direction. Task I2 adds Unity scaffolding and configuration. Task I3 implements Museum UI with read-only local catalog loading, pavilion selection, expandable cards, scrolling, and About navigation. Bootstrap scene flow and AR runtime behavior remain planned. The [draft catalog](../../content/catalog/museum_catalog.json) and [validator](../../scripts/Validate-Catalog.ps1) provide content tooling. See [project status](../../README.md), [I2 setup evidence](../testing/I2_SETUP.md), [I3 UI verification](../testing/I3_MUSEUM_UI.md), and [acceptance criteria](../design/ACCEPTANCE_CRITERIA.md).
+This document describes the approved direction. I2 adds Unity scaffolding/configuration; I3 implements the Museum UI and I4 populates historical content. I5 adds an AR image-tracking foundation with diagnostic visuals and simulated-event verification; [I5 evidence and limitations](../testing/I5_AR_FOUNDATION.md) distinguish this from hardware acceptance. Bootstrap flow, Museum-to-AR navigation, gestures, historical models and demonstrations remain planned. See [project status](../../README.md), [I2 setup evidence](../testing/I2_SETUP.md), [I3 UI verification](../testing/I3_MUSEUM_UI.md), and [acceptance criteria](../design/ACCEPTANCE_CRITERIA.md).
 
 ## Four layers
 
@@ -16,6 +16,8 @@ Presentation calls Application. Application consumes Content and coordinates AR 
 I3 implements the first three non-AR boundaries through `Iara.Presentation`, `Iara.Application`, and `Iara.Content` assemblies. `MuseumScreen` binds serialized uGUI/TMP references, `MuseumState` owns category/expansion state without UI dependencies, and `MuseumCatalog` parses the existing TextAsset. I4 extends Content validation and Presentation binding for historical sections and locally stored source titles; Application state and AR remain unchanged. UI prefab references are serialized on the scene component; the future exhibit model/marker ScriptableObject registry is not implemented.
 
 ## Planned scenes
+
+I5 adds `Iara.AR` without introducing provider references into Application, Content or the existing Presentation assembly. `MarkerMap` derives IDs from JSON; `ExhibitSelection` provides explicit application selection; `ImageTrackingState` owns single-trackable/debounce policy. AR adapts `trackablesChanged` events and keeps tracked pose separate from the preserved user transform. Presentation consumes an application-level status interface. `ImageTrackingAssets` stores the reference-image library and one shared diagnostic prefab; it is not the future per-exhibit historical-model registry. See [marker dimensions and printing](../design/MARKERS.md).
 
 | Scene | Responsibility |
 | --- | --- |
