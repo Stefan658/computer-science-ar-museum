@@ -1,0 +1,5 @@
+{
+  "name": "Iara.Application",
+  "rootNamespace": "Iara.Application",
+  "references": ["Iara.Content"]
+}

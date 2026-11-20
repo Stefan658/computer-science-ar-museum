@@ -1,6 +1,6 @@
 # Planned architecture
 
-This document describes the approved direction. Task I2 adds Unity project scaffolding, empty scene assets, and Editor-only setup/verification; runtime behavior remains planned. The [draft catalog](../../content/catalog/museum_catalog.json) and [validator](../../scripts/Validate-Catalog.ps1) provide content tooling. See [project status](../../README.md), [I2 setup evidence](../testing/I2_SETUP.md), and [acceptance criteria](../design/ACCEPTANCE_CRITERIA.md).
+This document describes the approved direction. Task I2 adds Unity scaffolding and configuration. Task I3 implements Museum UI with read-only local catalog loading, pavilion selection, expandable cards, scrolling, and About navigation. Bootstrap scene flow and AR runtime behavior remain planned. The [draft catalog](../../content/catalog/museum_catalog.json) and [validator](../../scripts/Validate-Catalog.ps1) provide content tooling. See [project status](../../README.md), [I2 setup evidence](../testing/I2_SETUP.md), [I3 UI verification](../testing/I3_MUSEUM_UI.md), and [acceptance criteria](../design/ACCEPTANCE_CRITERIA.md).
 
 ## Four layers
 
@@ -12,6 +12,8 @@ This document describes the approved direction. Task I2 adds Unity project scaff
 | Content | JSON data, loading/validation, ScriptableObject asset registry, packaged models and markers | Supplies metadata and local asset mappings; does not navigate scenes or manage tracking |
 
 Presentation calls Application. Application consumes Content and coordinates AR through contracts. AR may use Content asset mappings but does not control catalog navigation. Unity composition wires these boundaries; exact classes, assembly layout, and loader choices remain implementation decisions.
+
+I3 implements the first three non-AR boundaries through `Iara.Presentation`, `Iara.Application`, and `Iara.Content` assemblies. `MuseumScreen` binds serialized uGUI/TMP references, `MuseumState` owns category/expansion state without UI dependencies, and `MuseumCatalog` parses the existing TextAsset. UI prefab references are serialized on the scene component; the future exhibit model/marker ScriptableObject registry is not implemented.
 
 ## Planned scenes
 
@@ -30,7 +32,7 @@ Planned flow: Bootstrap → Museum → ARExperience → Museum. Selection crosse
 - Exhibit registry ScriptableObjects will map stable keys to Unity asset references: one main prefab and one unique reference image per exhibit, plus applicable demonstration assets/components. No exhibit registry exists yet; Unity rendering/XR configuration assets serve a separate purpose.
 - JSON keys alone are not Unity asset references. All eight entries must resolve locally; unknown or missing mappings must produce a controlled error rather than display the wrong model.
 - Initial metadata scale/orientation establishes a model baseline. User zoom/rotation is separate session state; resetting restores that baseline.
-- Packaging must include JSON, models, images, educational resources, and attribution. Task I2 places a byte-identical JSON TextAsset copy under `Assets/IARA/Content/Resources/`; runtime loading and synchronization are not implemented. Packaging of other exhibit assets remains to be designed and must work on Android without network access.
+- Packaging must include JSON, models, images, educational resources, and attribution. Task I2 places a byte-identical JSON TextAsset copy under `Assets/IARA/Content/Resources/`; I3 reads this asset through a serialized scene reference. Synchronization with the repository source is still manual. Packaging of other exhibit assets remains to be designed and must work on Android without network access.
 
 ## Tracking and interaction
 

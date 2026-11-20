@@ -1,0 +1,5 @@
+{
+  "name": "Iara.Presentation",
+  "rootNamespace": "Iara.Presentation",
+  "references": ["Iara.Application", "Iara.Content", "Unity.TextMeshPro", "UnityEngine.UI"]
+}

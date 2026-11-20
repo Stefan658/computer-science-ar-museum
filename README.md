@@ -4,7 +4,7 @@ IARA is a university master's project for an educational, offline-first Android 
 
 ## Current status
 
-The developer reports design phases P1–P7 as completed and approved, and repository audit #001 as approved. The repository provides a JSON catalog, a PowerShell validator, and project documentation. Task I2 initializes the Unity project in `ComputerScienceARMuseum/`; see the [setup record](docs/testing/I2_SETUP.md) for verified configuration and limitations. Unity Editor `6000.3.27f1` and Android tooling are installed. Runtime navigation, AR behavior, models, markers, hotspots, and educational demonstrations remain unimplemented.
+The developer reports design phases P1–P7 as completed and approved, and repository audit #001 as approved. Task I2 initialized the Unity project in `ComputerScienceARMuseum/`; see the [setup record](docs/testing/I2_SETUP.md). Unity Editor `6000.3.27f1` and Android tooling are installed. Task I3 adds a Museum UI foundation with local catalog loading, pavilion filtering, expandable cards, scrolling, and an About view; see [I3 verification and GUI checks](docs/testing/I3_MUSEUM_UI.md). Open the Museum scene directly to use it. Bootstrap scene flow, AR behavior, models, markers, hotspots, and demonstrations remain unimplemented.
 
 The catalog contains 3 pavilions, 8 exhibits, and 4 demonstration identifiers. Historical text, dates, creators, sources, credits, and hotspots remain incomplete. Model and marker keys do not establish that assets exist. Historical claims, model fidelity, media licenses, and sources require verification before release.
 
@@ -47,10 +47,10 @@ Four planned layers separate Presentation, Application, AR, and Content responsi
 | `content/sources/` | Reserved for source records; currently empty |
 | `assets-source/{markers,models,references}/` | Reserved source asset directories; currently empty |
 | [scripts/Validate-Catalog.ps1](scripts/Validate-Catalog.ps1) | Existing Draft/Release catalog validator |
-| `ComputerScienceARMuseum/` | Unity project initialized during Task I2; scene assets are scaffolding without gameplay |
+| `ComputerScienceARMuseum/` | Unity project with Museum UI foundation; Bootstrap and ARExperience remain scaffolding |
 | `docs/architecture/` | Architecture documentation |
 | `docs/design/` | Design and acceptance documentation |
-| `docs/testing/` | Reserved for test evidence; currently empty |
+| `docs/testing/` | Setup records, UI verification, file inventories, and remaining manual checks |
 
 Empty directories are local scaffolding and are not retained by Git unless Unity folder metadata is present. Open `ComputerScienceARMuseum/` with Unity `6000.3.27f1`. `.venv/` is a local ignored environment, not an application dependency.
 
